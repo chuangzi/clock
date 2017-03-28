@@ -1,0 +1,131 @@
+.box{
+    width: 230px;
+    height: 230px;
+    margin: 50px auto 0;
+    background: #ff605e;
+}
+.clock{
+    width: 190px;
+    height: 190px;
+    background: #FFF;
+    border-radius: 50%;
+    border: 4px solid #60b300;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 13px;
+}
+.common{
+    font-size: 10px;
+    color: #000;
+    position: absolute;
+}
+.num1{
+    margin-left: 140px;
+    margin-top: 12px;
+}
+.num2{
+    margin-left: 169px;
+    margin-top: 44px;
+}
+.num3{
+    margin-left: 180px;
+    margin-top: 85px;
+}
+.num4{
+    margin-left: 166px;
+    margin-top: 130px;
+}
+.num5{
+    margin-left: 137px;
+    margin-top: 159px;
+}
+.num6{
+    margin-left: 95px;
+    margin-top: 171px;}
+.num7{
+    margin-left: 53px;
+    margin-top: 160px;
+}
+.num8{
+    margin-left: 20px;
+    margin-top: 130px;
+}
+.num9{
+    margin-left: 4px;
+    margin-top: 86px;
+}
+.num10{
+    margin-left: 15px;
+    margin-top: 43px;
+}
+.num11{
+    margin-left: 46px;
+    margin-top: 10px;
+}
+.num12{
+    margin-left: 92px;
+    margin-top: -5px;
+}
+/*时针*/
+.time{
+    width: 6px;
+    height: 60px;
+    background: #fff100;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 50%;
+    margin-top: -60px;
+    transform-origin: 50% 100%;
+    animation: time 43200s linear infinite;
+}
+@keyframes time{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*分针*/
+.minute{
+    width: 4px;
+    height: 70px;
+    background: #008100;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 50%;
+    margin-top: -70px;
+    transform-origin: 50% 100%;
+    animation: minute 3600s linear infinite;
+}
+@keyframes minute{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*秒针*/
+.second{
+    width: 2px;
+    height: 80px;
+    background: #FF4C4C;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -80px;
+    transform-origin: 50% 100%;
+    animation: second 60s /*linear*/ steps(60) infinite;/*停顿60次*/
+}
+@keyframes second{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*中心黑点*/
+.point{
+    width: 8px;
+    height: 8px;
+    background: #000;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -4px;
+    top: 50%;
+    margin-top: -4px;
+}
